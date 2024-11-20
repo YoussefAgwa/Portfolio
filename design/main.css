@@ -49,6 +49,12 @@ body {
   text-shadow:0 0 25px var(--main-color), 
               0 0 50px #fff;
 }
+::-webkit-scrollbar {
+  background-color: black;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+}
 /* End global values */
 
 /* Start Header */
