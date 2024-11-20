@@ -1,8 +1,8 @@
 let menuIcon = document.querySelector(".menu");
-let links = document.querySelector("ul.links");
+let ul = document.querySelector("ul.links");
 let links = document.querySelectorAll("ul.links li a");
 menuIcon.addEventListener("click", () =>{
-  links.classList.add("mobile");
+  ul.classList.add("mobile");
 })
 links.forEach(link => {
   link.addEventListener("click" , (e) => {
@@ -16,6 +16,6 @@ links.forEach(link => {
 })
 document.body.addEventListener("click", (e) => {
   if(e.target != menuIcon ) {
-    links.classList.remove("mobile");
+    ul.classList.remove("mobile");
   }
 })
